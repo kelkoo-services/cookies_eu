@@ -10,3 +10,5 @@ $ ->
 
     $(".cookies-eu").fadeOut "slow"
     return
+
+  $(".cookies-eu").fadeIn "slow" unless $.cookie("cookie_eu_consented")?
