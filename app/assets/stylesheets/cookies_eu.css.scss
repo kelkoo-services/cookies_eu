@@ -1,43 +1,26 @@
+// Using kelistrap colors and sizes hardcoded waiting for the kelistrap to be included across all projects.
+
 .cookies-eu {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  background: #e2e2e2;
-  border-top: 1px solid #317DC6;
-  color: #1d1d1d;
+  background: #EEF2F8;
+  box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.10);
+  color: #49596D;
+  font-size: 12px;
+  position: relative;
   text-align: center;
-  font-size: 10pt;
-  line-height: 1.3em;
+  @include tablet-landscape-and-up {
+    font-size: 14px;
+  }
 
   .cookies-eu-content-holder {
-    display: inline-block;
-    padding: .8em 2em;
-    a {
-      color: #31a8f0;
-      text-decoration: none;
-    }
+    padding: 1rem 2rem;
   }
-  .cookies-eu-button-holder {
-    display: inline-block;
-    padding-right: 20px;
-
-    .cookies-eu-ok {
-      background: #317DC6;
-      border: 1px solid #3079ed;
-      border-radius: 2px;
-      color: #fff;
-      display: inline-block;
-      font-size: 11px;
-      font-weight: bold;
-      min-width: 26px;
-      outline: 0;
-      padding: .2em 1.8em;
-      text-align: center;
-      white-space: nowrap;
-      margin: .6em;
-      cursor: pointer;
-    }
+  a.cookies-eu-ok {
+    color: #3BA8EC;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    text-decoration: none;
   }
 }

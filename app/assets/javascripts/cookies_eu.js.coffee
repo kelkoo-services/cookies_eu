@@ -9,7 +9,7 @@ $ ->
       domain: document.domain.split(".").slice(-2).join(".")
       expires: 365
 
-    $(".cookies-eu").fadeOut "slow"
+    $(".cookies-eu").slideUp "slow"
     return
 
-  $(".cookies-eu").fadeIn "slow" unless $.cookie("cookie_eu_consented")?
+  $(".cookies-eu").slideDown "slow" unless $.cookie("cookie_eu_consented")?
