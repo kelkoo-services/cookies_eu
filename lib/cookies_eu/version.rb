@@ -1,3 +1,3 @@
 module CookiesEu
-  VERSION = "1.0.10" # Added position fixed.
+  VERSION = "1.0.11" # Added position fixed bottom.
 end
